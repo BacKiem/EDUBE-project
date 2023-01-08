@@ -1,0 +1,54 @@
+<div class="bodyCourse">
+    <div class="bodyCourse_slide mt-2">
+       <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://edube.org/uploads/media/default/0001/02/bf58f28faf44683ec7045c07ab7bf69b47fdaef9.png" class="d-block w-100 img_slide-sm" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://edube.org/uploads/media/default/0001/02/77d966034645d1e2774f28a0c60709892ee60b7c.png" class="d-block w-100 img_slide-sm" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://edube.org/uploads/media/default/0001/02/d1a67f62d67e8a41029d8744ded1a592e5ef6220.png" class="d-block w-100 img_slide-sm" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="bodyCourse_courses mt-5 mb-5 container">
+        <h2 class="text-center">KHÓA HỌC</h2>
+        <div class="row">
+            {{#each Course}}
+            <div class="col-sm-6 col-lg-3 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <a href="/learning/{{this.slug}}">
+                        <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+                    </a>
+                    <div class="card-body">
+                        <a href="/learning/{{this.slug}}">
+                            <h5 class="card-title">{{this.name}}</h5>
+                        </a>
+                        <a href="/learning/{{this.slug}}">
+                            <p class="card-text">{{this.description}}</p>
+                        </a>
+                        <span style="color: red;">{{this.star}} ✫</span>
+                        <span class="ms-3" style="color: green;"> {{this.price}}</span>
+                        <a href="/learning/{{this.slug}}" class="btn btn-primary ms-5">Học Ngay</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<nav aria-label="Page navigation example">
+  <ul id="PageLesson" class="pagination">
+    <li id="buttonPrevious" class="page-item"><a id="PreviousLesson" class="page-link " href="">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="/learning/{{lesson.course}}/lesson/{{lesson.module}}/1">1</a></li>
+    <li class="page-item"><a class="page-link" href="/learning/{{lesson.course}}/lesson/{{lesson.module}}/2">2</a></li>
+    <li class="page-item"><a class="page-link" href="/learning/{{lesson.course}}/lesson/{{lesson.module}}/3">3</a></li>
+    <li  id="buttonNext" class=" page-item"><a id="nextLesson" class="page-link" href="">Next</a></li>
+    <span>Trang Hiện tại : </span>
+    <li class="page-item"><a id="replaceLesson" class="page-link" href="/learning/{{lesson.course}}/lesson/{{lesson.module}}"></a></li>
+    <li class="page-item"><a id="replaceLesson" class="page-link" href="/learning/{{lesson.course}}/lesson/{{lesson.module}}">{{lesson.length}}</a></li>
+
+
+  </ul>
+</nav>
+<div class="row">
+    <div class="col ">{{lesson.theory}}</div>
+    <div class="col ">{{lesson.exercise}}</div>
+    <div class="col ">Compile</div>
+</div>
+<script>
+  //// den bai tap cuoi thi chuyen trang khong loi
+    const PageLesson=document.getElementById('PageLesson');
+    const buttonPreviousLesson=document.getElementById('buttonPrevious');
+    const buttonNextLesson=document.getElementById('buttonNext');
+    const NextLesson=document.getElementById('nextLesson');
+    const PreviousLesson=document.getElementById('PreviousLesson');
+    const replaceLesson=document.getElementById('replaceLesson');
+
+    let indexLesson;
+    var PreviouLink=`/learning/{{lesson.course}}/lesson/{{lesson.module}}/`;
+    indexLesson=NextLesson.href[NextLesson.href.length-1];
+
+    console.log(indexLesson);
+    if(indexLesson==1){
+      buttonPreviousLesson.classList.add('disabled');
+    }
+    else
+    if(indexLesson>indexLesson){
+      buttonNextLesson.classList.add('disabled');
+    }
+    else
+    buttonNextLesson.classList.remove('disabled');
+    replaceLesson.innerText=`${indexLesson}`
+
+
+    buttonNextLesson.addEventListener('click',()=>{
+      indexLesson++;
+      NextLesson.href=`${PreviouLink}${indexLesson}`
+
+    })
+    buttonPreviousLesson.addEventListener('click',()=>{
+      indexLesson--;
+      PreviousLesson.href=`${PreviouLink}${indexLesson}`
+    })
+
+</script>
