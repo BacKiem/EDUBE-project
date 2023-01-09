@@ -1,0 +1,50 @@
+-node
+(node init)
+
+-express https://expressjs.com/
+
+-nodedemon https://www.npmjs.com/package/nodemon
+(if change auto restart sever )
+add command
+scripts": {
+    "start": "nodemon index.js",
+    }
+
+-Morgan https://www.npmjs.com/package/morgan
+(console log Method Get/post/  , HTTP request 200/300/404 ,...)
+
+-express-handlebar
+(Build component Reuse ,html ,layout)
+const handlebars = require('express-handlebars');
+app.engine('hbs', handlebars.engine({extname:'.hbs'}));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'resources/views'));
+
+-Static file (CSS ,SCSS)
+app.use( express.static(path.join(__dirname, 'public')));
+link file <link rel="stylesheet" href="/css/style.css"> in main.hbs
+npm run watch ( auto watch compile scss > css )
+
+-Bootsrap 
+link in  main.hbs
+
+-Form 
+
+-MVC
++views
++Router_Controller
+    file router - index : config link app (link , dispatch)
+                -news ,site : (link child of parent ,)
++Controller 
+    file  -NewsController ,SiteController : dispatch respon out view
+
++Model
+    mogooes - fomat file , kieu file
+    + config connect : config/db/index.js
+        await mongoose.connect('mongodb://localhost:27017/edube'); // link mongodb://[localhost]:27017/[data file]
+    +buid Schema & export Model : module.exports=mongoose.model('courses', Course);///tham so 1 duong dan toi file  '/edube/Collection' ,tham so 2 doi tuong Schema
+    +Controller model : /SiteController __ Course.find({},function (err,Course)) // {}, funtion (loi, data require)
+
+-read db
+-Create db
+-update db

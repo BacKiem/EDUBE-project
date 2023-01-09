@@ -1,0 +1,29 @@
+<div class="create_coursesModule mt5 ms-5 mb-5">
+    <h1 class="mt-5 text-center" style="color: black;">Tạo Module của khóa học mới</h1>
+    <form method="post" action="/courses/stored">
+  <div class="mb-3">
+    <label for="createModule" class="form-label">Tên Module</label>
+    <input type="text" class="form-control" id="createModule" aria-describedby="emailHelp" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="createModule" class="form-label">Mô tả</label>
+    <input type="text" class="form-control" id="createModule" aria-describedby="emailHelp" name="description">
+  </div>
+  <div class="mb-3">
+    <label for="createModule" class="form-label">Link Ảnh hoặc video Module</label>
+    <input type="text" class="form-control" id="createModule" aria-describedby="emailHelp" name="image">
+  </div>
+  <div class="mb-3">
+    <label for="createModule" class="form-label">Số lesson</label>
+    <input type="text" class="form-control" id="createModule" aria-describedby="emailHelp" name="numberLesson">
+  </div>
+  <div class="mb-3">
+    <label for="createModule" class="form-label">Module Của khóa học </label>
+    <input type="text" class="form-control" id="createModule" aria-describedby="emailHelp" name="course">
+  </div>
+  <div class="row">
+      <button type="submit" class="btn btn-primary w-50 col">Tạo thêm bài học</button>
+    <a href="/courses/createLesson" class="btn btn-success col" tabindex="-1" role="button" aria-disabled="true">Next</a>
+  </div>
+</form>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="mt-5 mt-5">
+    <div class="row">
+        {{#each model}}
+        <div class="col-sm-6 col-lg-6 mt-5">
+            <div class="card text-center">
+            <div class="card-header">
+                {{this.course}}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">Số bài học :{{this.numberLesson}}</p>
+                <a href="/learning/{{this.course}}/lesson/{{this.slugModule}}/1" class="btn btn-primary">Học ngay</a>
+            </div>
+            <div class="card-footer text-muted">
+                ___megaSwain__
+            </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+

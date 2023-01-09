@@ -1,0 +1,88 @@
+<div class="show_course container ">
+    <img style="width: 100%;height: 400px;;" src="{{course.image}}" alt="{{course.name}}">
+    <a href="/learning/{{course.slug}}/module" class="position-absolute top-50 start-50 translate-middle">
+        <button type="button" class="btn btn-primary btn-lg ">Learn NOW !!!</button>
+    </a>
+    <div class="row mt-5 ">
+        <div class="col-8">
+            <p class="mt-5 fs-2 text-secondary">About this course</p>
+            <p class="mt-1 fs-2 text-dark">{{course.name}}</p>
+            <p>Khóa học này là khóa học đầu tiên trong chuỗi 2 khóa học sẽ giúp bạn chuẩn bị cho kỳ thi lấy chứng chỉ
+                Lập trình {{course.name}} đầu vào được chứng nhận PCEP - Chứng chỉ lập trình viên {{course.name}} và
+                PCAP: Hiệp hội được chứng nhận về lập trình {{course.name}}.
+
+                Mục tiêu chính của khóa học là hướng dẫn bạn từ trạng thái mù chữ lập trình hoàn toàn đến mức kiến
+                ​​thức lập trình cho phép bạn thiết kế, viết, gỡ lỗi và chạy các chương trình được mã hóa bằng ngôn ngữ
+                {{course.name}} và hiểu các khái niệm cơ bản về phần mềm công nghệ phát triển.
+
+                Khóa học sẽ chuẩn bị cho bạn các công việc và nghề nghiệp liên quan đến phát triển phần mềm được hiểu
+                rộng rãi, không chỉ bao gồm việc tự tạo mã với tư cách là nhà phát triển cơ sở mà còn cả thiết kế hệ
+                thống máy tính và kiểm tra phần mềm.
+                {{course.description}}</p>
+            <p class="mt-5 fs-2 text-secondary">You will learn</p>
+            <ul>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">Tìm hiểu các khái niệm phổ quát về lập trình máy tính</span>
+                </li>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">
+                        Tìm hiểu cú pháp và ngữ nghĩa của ngôn ngữ {{course.name}}</span> </li>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">Sử dụng các yếu tố quan trọng nhất của Thư viện chuẩn
+                        {{course.name}}</span> </li>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">Cài đặt môi trường thời gian chạy của bạn</span> </li>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">
+                        Thực hành kỹ năng giải quyết các thách thức triển khai điển hình</span> </li>
+                <li class="mt-3 list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                    </svg><span class="mx-2  text-black">Viết chương trình {{course.name}} của riêng bạn</span> </li>
+            </ul>
+            <div class="Certification">
+                <span>Chứng Chỉ</span>
+                <p>PCEP-Chứng nhận lập trình viên Python cấp nhập cảnh được chứng nhận là một chứng chỉ chuyên môn, đo lường khả năng của bạn để hoàn thành các nhiệm vụ mã hóa liên quan đến các yếu tố cần thiết của lập trình bằng ngôn ngữ {{course.name}}. Một ứng cử viên kiểm tra cần chứng minh kiến ​​thức đầy đủ về các khái niệm phổ quát về lập trình máy tính, cú pháp và ngữ nghĩa của ngôn ngữ {{course.name}} cũng như các kỹ năng trong việc giải quyết các thách thức thực hiện điển hình với sự trợ giúp của Thư viện tiêu chuẩn {{course.name}}.</p>
+                <p>PCEP-Chứng nhận lập trình viên {{course.name}} cấp nhập cảnh được chứng nhận cho thấy cá nhân này quen thuộc với các khái niệm lập trình máy tính phổ quát như kiểu dữ liệu, container, chức năng, điều kiện, vòng lặp, cũng như cú pháp ngôn ngữ lập trình {{course.name}}, ngữ nghĩa và môi trường thời gian chạy. Trở thành được chứng nhận PCEP đảm bảo rằng cá nhân được làm quen với các phương tiện thiết yếu nhất được cung cấp bởi {{course.name}} 3 để cho phép cô ấy/anh ấy bắt đầu nghiên cứu của riêng họ ở cấp độ trung cấp và tiếp tục phát triển chuyên nghiệp.</p>
+                <p>PCEP-Chứng nhận lập trình viên {{course.name}} cấp nhập cảnh được chứng nhận là một bước tạm thời của PCAP-cộng tác viên được chứng nhận trong chứng nhận lập trình {{course.name}} và là điểm khởi đầu để khởi động sự nghiệp phát triển phần mềm, lập trình {{course.name}} và các công nghệ liên quan. Trở thành PCEP được chứng nhận sẽ giúp bạn nổi bật so với các ứng cử viên khác và đưa chân vào cửa.</p>
+                <span>More Information: <a href="">PCEP – Certified Entry-Level Python Programmer</a> </span>
+            </div>
+
+
+        </div>
+        <div class="col-4 mt-5">
+            <div class="mt-3 "><span class="fw-bold">Name</span>  : {{course.name}}</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Author</span>  : {{course.author}}</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Cost</span> : {{course.price}}</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Star</span> : {{course.star}}</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Study Time</span> : 42 hours (Recommended: 7h/week)</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Language</span> : Tiếng Việt ,English</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Associated Certification</span>: PCEP – Certified Entry-Level {{course.name}} Programmer (Exam PCEP-30-01 & PCEP-30-02)</div>
+            <hr>
+            <div class="mt-3 "><span class="fw-bold">Mode</span> :Online self-study course {{course.star}}</div>
+            <hr>
+        </dv>
+    </div>
+</div>
