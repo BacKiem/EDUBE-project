@@ -1,6 +1,7 @@
 # EDUBE
 # Vũ Chí Nguyên
 # Toán
+# Nguyen van tung
 tải github desktop
 
 đăng kí tài khoản Github sau đó nickname lên nhóm để add vô project
