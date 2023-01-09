@@ -13,3 +13,16 @@ file -> clone repository https://github.com/Lavi-Vu/EDUBE-project.git (nhớ ch�
 clone xong thì mở project rồi thêm tên vào file README.md để test
 
 chuyển sang github bấm commit to main và push origin
+
+
+# Các công cụ cần cài đặt
+
+# 1 NODEJS
+google tải nodejs
+# 2 SCSS
+# 3 express
+# 4 nodemon
+--save-dev
+# 5 morgan
+# 6 express-handlebar
+
